@@ -1,0 +1,127 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eae8db;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: #f55a2a;
+}
+
+/* Estilos do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label[for="masculino"],
+label[for="feminino"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label::before {
+  content: "\2022"; /* Use um ponto como marcador */
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #ffffff;
+  text-align: center;
+  line-height: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+input[type="radio"]:checked + label::before {
+  background: #007bff;
+}
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+input[type="radio"] + label:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+label [for="tipoSanguineo"] {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select#tipoSanguineo {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#mapa {
+  background-color: #f55a2a;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Container para os botões */
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+#resultado {
+  text-align: center;
+  margin-top: 25px;
+}

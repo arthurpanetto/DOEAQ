@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.map-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #007bff;
+  margin: 10px;
+  text-align: center;
+}
+
+#hemoesvix {
+  color: red;
+}
+
+.map {
+  text-align: center;
+}
+
+iframe {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  margin: 10px;
+}
+
+p {
+  margin: 10px;
+  max-width: 600px;
+  text-align: justify;
+}
+
+/* Estilo para o botão */
+#index {
+  background-color: #5900ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#index a {
+  text-decoration: none;
+  color: #fff;
+}
